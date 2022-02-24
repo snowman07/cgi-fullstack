@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+}
+
+h1 {
+    text-align: center;
+    margin: 50px;
+    font-weight: bolder;
+    font-size: 80px;
+
+    /* from googlefonts */
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shizuru', cursive;
+}
+
+#display-weather {
+    border: solid 20px #cccc;
+    border-radius: 20px;
+    padding: 30px ;
+    margin-top: 50px;
+}
+
+.card-body > .card-title:first-child {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}

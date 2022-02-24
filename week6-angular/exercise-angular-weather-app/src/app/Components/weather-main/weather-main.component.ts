@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WeatherDataService } from 'src/app/services/weather-data.service';
 
 @Component({
   selector: 'app-weather-main',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WeatherMainComponent implements OnInit {
 
-  constructor() { }
+              //inject the WeatherDataService in the constructor and store it in variable weatherData
+  constructor(private weatherData: WeatherDataService) { }
+
+  //TO DISPLAY THE CONTENT IN A WEBPAGE!!!!!
+
+  public cityname:string = '';
+
+  public cities: any; //any is a collection of objects
+
+  GetWeatherData(cityname:string) {
+    this.weatherData.GetWeatherDataFromCity(this.cityname).subscribe(data => console.log(data));
+
+    //TO DISPLAY THE CONTENT IN A WEBPAGE!!!!!
+    this.weatherData.GetWeatherDataFromCity(this.cityname).subscribe(data => this.cities = data);
+  }
 
   ngOnInit(): void {
+
+
   }
 
 }
