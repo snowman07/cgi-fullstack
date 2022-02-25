@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+<br/><br/><br/>
+# PROJECT OVERVIEW
+
+`Check the weather by entering city name`
+
+This Angular project make use of the concepts of Components, fetching the API from an external source (https://openweathermap.org/current#name), Services and doing Dependency Injection (DI).
+<br/><br/>
+References:
+- [Angular docu](https://angular.io/)
