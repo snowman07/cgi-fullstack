@@ -46,9 +46,12 @@ h1 {
 
     
 }
-
+.card-header {
+    text-align: center;
+}
 
 .card-body > .card-title:first-child {
     padding-bottom: 20px;
+    text-align: center;
     text-transform: uppercase;
 }
